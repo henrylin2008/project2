@@ -1,6 +1,7 @@
-import os
-
-a, b = 3, 4
-sum(a+b)
-
-print("hello world")
+## Example 1: Using looping technique
+def fib(n):
+ a,b = 1,1
+ for i in range(n-1):
+  a,b = b,a+b
+ return a
+print fib(5)
